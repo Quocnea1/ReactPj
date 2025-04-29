@@ -60,17 +60,6 @@ const Header = ({ className = "" }) => {
             </li>
             <li>
               <Link
-                to="/skills"
-                onClick={() => handleClick("skill")}
-                className={`cursor-pointer ${
-                  active === "skill" ? "text-blue-600 font-semibold" : "hover:text-blue-500"
-                }`}
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/experience"
                 onClick={() => handleClick("experience")}
                 className={`cursor-pointer ${
@@ -78,6 +67,17 @@ const Header = ({ className = "" }) => {
                 }`}
               >
                 Experience
+              </Link>
+            </li>
+             <li>
+              <Link
+                to="/Contact"
+                onClick={() => handleClick("skill")}
+                className={`cursor-pointer ${
+                  active === "skill" ? "text-blue-600 font-semibold" : "hover:text-blue-500"
+                }`}
+              >
+                Contact
               </Link>
             </li>
           </ul>

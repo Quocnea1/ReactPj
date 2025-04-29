@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Hero from './pages/Hero';
 import About from './pages/About';
-import Skill from './pages/Skill';
+import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,7 +20,7 @@ const AppContent = () => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1500);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, [location]);
 
@@ -32,7 +32,7 @@ const AppContent = () => {
           <Route path="/" element={<Hero />} />
           <Route path="/hero" element={<Hero />} />
           <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skill />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
       )}

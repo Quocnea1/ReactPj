@@ -5,7 +5,7 @@ const Hero = ({ className = '' }) => {
   return (
     <>
     <Header className='fixed top-0 left-0 z-999' /> 
-    <div className={`${className} min-h-[100vh] h-full flex items-center`}>
+    <div className={`${className} min-h-[100vh] h-full flex items-center relative bg-amber-100`}>
       <section
         id="hero"
         className="w-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12"
@@ -25,7 +25,7 @@ const Hero = ({ className = '' }) => {
             Crafting beautiful, responsive digital experiences with modern web technologies.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto pt-2">
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto pt-2"> 
             <button className="relative overflow-hidden group rounded-lg bg-violet-600 px-6 py-3 text-white font-medium shadow-lg hover:shadow-violet-400/30 transition-all duration-300">
               <span className="relative z-10">View Portfolio</span>
               <span className="absolute inset-0 bg-gradient-to-r from-violet-700 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -44,7 +44,7 @@ const Hero = ({ className = '' }) => {
           <div className="w-64 h-64 md:w-80 md:h-80 lg:w-120 lg:h-120 relative">
             <div className="absolute inset-0 bg-violet-100 rounded-full blur-xl opacity-30 animate-pulse"></div>
             <div 
-              className="relative w-full h-full bg-[url('/images/image1.png')] bg-contain bg-no-repeat bg-center z-10 animate-float"
+              className="relative w-full h-full bg-[url('/images/logo02.png')] bg-contain bg-no-repeat bg-center z-10 animate-float"
             ></div>
           </div>
         </div>

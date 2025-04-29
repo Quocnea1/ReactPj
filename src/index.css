@@ -52,7 +52,25 @@
     to {
       transform: rotate(360deg);
     }
-  }
+    }
+    @keyframes runAnimal {
+      0% {
+        left: -80px;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    @keyframes slideBackground {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+      
 }
 
 @layer components {
@@ -75,6 +93,12 @@
   .rotate-slow {
     animation: rotate 20s linear infinite;
     transform-origin: center center;
+  }
+  .animate-runAnimal {
+    animation: runAnimal 2s linear forwards;
+  }
+  .animate-slideBackground {
+    animation: slideBackground 2s ease-in-out forwards;
   }
 
 }
